@@ -118,12 +118,12 @@
 // let randomString = prompt("Nhập chuỗi bất kỳ");
 // let i=0;
 // while (i<randomString.length) {
-//    console.log(randomString.substr(i,1));
+//    console.log("randomString["+i+"]="+randomString.substr(i,1));
 //    i++;
 //  };
 // let randomString = prompt("Nhập chuỗi bất kỳ");
 // for (let i = 0; i < randomString.length; i++) {
-//     console.log("randomString["+i+"]="+randomString.substr(i,1));    
+//     console.log("randomString["+i+"]="+randomString.charAt(i));    
     
 // };
 
@@ -131,11 +131,11 @@
 // Câu 7:
 // let loop = "yes";
 // while (loop="yes") {
-//     let name=prompt("nhập chuỗi bất kỳ");
-//     for(let i= name.length-1;i>=0;i--){
-//         console.log(i+":"+ name.substr(i,1));
+    // let name=prompt("nhập chuỗi bất kỳ");
+    // for(let i= name.length-1;i>=0;i--){
+    //     console.log(i+": "+name.substr(i,1));
         
-//     }
+    // }
 //     loop=prompt("Bạn có muốn tiếp tục (yes/no)");
 //     if(loop==="no"){
 //         break;
