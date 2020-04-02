@@ -109,9 +109,7 @@
 
 //     };
 //     loop = prompt("Bạn có muốn sử dụng trương trình tiếp ko (yes/no)");
-//     if(loop ==="no"){
-//        break;
-//     };
+// 
 // } ;
 
 // Câu 6:
@@ -131,14 +129,18 @@
 // Câu 7:
 // let loop = "yes";
 // while (loop="yes") {
-    // let name=prompt("nhập chuỗi bất kỳ");
-    // for(let i= name.length-1;i>=0;i--){
-    //     console.log(i+": "+name.substr(i,1));
+//     let name=prompt("nhập chuỗi bất kỳ");
+//      let reversename = name[name.length-1]
+//     for(let i= name.length-2;i>=0;i--){
+//          reversename = `${reversename}${name[i]}`;
         
-    // }
+//     };
+//     console.log(reversename);
+    
 //     loop=prompt("Bạn có muốn tiếp tục (yes/no)");
 //     if(loop==="no"){
 //         break;
-//     }
+//     };
+   
 // };
  
