@@ -16,12 +16,8 @@
 // Câu 2:
 // let n=Number(prompt("Nhập số N"));
 // let loop =0;
-// if(n==0){
-//     console.log(n+" là số nguyên tố");
-    
-// }else if(n==1){
-//     console.log(n+" là số nguyên tố");
-    
+// if(n<2){
+//  console.log(n+" không phải số nguyên tố");
 // }else{
 //     for(let i=2;i<n/2;i++){
 //         if(n%i==0){
@@ -39,30 +35,27 @@
 
 // Câu 3:
 // function songuyento(n) {  
-//    let loop =0;
-//    if(n==0){
-//       console.log(n);
-    
-//     }else if(n==1){
-//       console.log(n);
-    
-//     }else{
-//        for(let i=2;i<n;i++){
-//           if(n%i==0){
-//             loop=1;
-//             break;
-//           }
+//    let loop =true;
+//    if(n<2){
+//        loop=false;
+//    }else{
+//         for(let i=2;i<n;i++){
+//            if(n%i==0){
+//               loop=false;
+//               break;
+//             }
         
 //         }
-
-//     } 
+//    }
+    
 //     return loop;
 // }
-// let n=Number(prompt("Nhập số N"));
-// for(let i=2;i<=n;i++){
-//     if (songuyento(i)===0){
+// let input=Number(prompt("Nhập số N"));
+
+// for(let i=0;i<=input;i++){
+//     if (songuyento(i)){
 //         console.log(i);
-//     }
+//     }           
 // }
     
 
@@ -120,10 +113,10 @@
 
 // Câu 7:
 // let a="*";
-// let x=a;
+// let x="";
 // let m=Number(prompt("Nhập số hàng"));
 // let n=Number(prompt("Nhập số cột"));
-// for(let i=1;i<m;i++){
+// for(let i=1;i<=m;i++){
 //   x=`${x}${a}`;
 // }
 // for(i=1;i<=n;i++){
