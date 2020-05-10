@@ -56,7 +56,7 @@
 //         alert("Done");
 //     } else if (input === 'd') {
 //         newnuber = prompt("127.0.0.1:500 says\nEnter the position you want to delete");
-//         items.splice(newnuber, 1);
+//         items.splice(newnuber-1, 1);
 //     } else {
 //         alert("127.0.0.1:500 says\nThis command is not supported");
 
@@ -100,7 +100,7 @@
 // let input = Number(prompt('Enter Number'));
 // for (i = 0; i < arr.length; i++) {
 //     if (arr[i] === input) {
-//         result.push(i);
+//         result.push(i-1);
 //         loop =1;
 //     }
 
@@ -114,34 +114,34 @@
 
 // Câu 8:
 
-let input = prompt("Hello, my name is Phuong Nam and here is my sheep sizes").split(",").map(x => +x);
-console.log("Hello, my name is Phuong Nam and here is my sheep sizes:\n" + input);
-let month = Number(prompt('Enter month '));
-for (let i = 1; i <= month; i++) {
-    let big = 0;
-    let index = [];
-    big = Math.max(...input);
-    console.log("Now may bigger sheep has size" + big + ",let's shave it");
-    loop = input.indexOf(big);
-    while (loop != -1) {
-        index.push(loop);
-        loop = input.indexOf(big, loop + 1);
-    }
-    for (let j = 0; j < index.length; j++) {
-        let a = index[j];
-        input[a] = 8;
-    }
-    console.log("After shearing, here is my flock\n" + input);
-    input = input.map(x => x + 50);
-    console.log("MONTH" + i + "\n One month has, passed, my sheep have grown, here are their sizes\n" + input);
+// let input = prompt("Hello, my name is Phuong Nam and here is my sheep sizes").split(",").map(x => +x);
+// console.log("Hello, my name is Phuong Nam and here is my sheep sizes:\n" + input);
+// let month = Number(prompt('Enter month '));
+// for (let i = 1; i <= month; i++) {
+//     let big = 0;
+//     let index = [];
+//     big = Math.max(...input);
+//     console.log("Now may bigger sheep has size" + big + ",let's shave it");
+//     loop = input.indexOf(big);
+//     while (loop != -1) {
+//         index.push(loop);
+//         loop = input.indexOf(big, loop + 1);
+//     }
+//     for (let j = 0; j < index.length; j++) {
+//         let a = index[j];
+//         input[a] = 8;
+//     }
+//     console.log("After shearing, here is my flock\n" + input);
+//     input = input.map(x => x + 50);
+//     console.log("MONTH" + i + "\n One month has, passed, my sheep have grown, here are their sizes\n" + input);
 
-}
-let sum = 0;
-for (i = 0; i < input.length; i++) {
-    sum += input[i];
-}
-let money = sum * 2;
-console.log(money);
+// }
+// let sum = 0;
+// for (i = 0; i < input.length; i++) {
+//     sum += input[i];
+// }
+// let money = sum * 2;
+// console.log(money);
 
 
 // Câu 9:

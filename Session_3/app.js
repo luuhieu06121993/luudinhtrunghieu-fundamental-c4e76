@@ -103,48 +103,48 @@
 // khi nguoi dung nhap vao E => ket thuc Chuong trinh
 // con lai cac th khac thi van nhu tren
 
-const todoList = ['Go to work at 8 am'];
-let loop = true;
-while (loop) {
-    let input = prompt("nhap vao thao tac").toLowerCase();
-    if (input === "c") {
-        let n = prompt("nhap todolist moi???");
-        todoList.push(n);
-        for (i = 0; i < todoList.length; i++) {
-            console.log(todoList[i]);
+// const todoList = ['Go to work at 8 am'];
+// let loop = true;
+// while (loop) {
+//     let input = prompt("nhap vao thao tac").toLowerCase();
+//     if (input === "c") {
+//         let n = prompt("nhap todolist moi???");
+//         todoList.push(n);
+//         for (i = 0; i < todoList.length; i++) {
+//             console.log(todoList[i]);
 
-        }
+//         }
 
-    } else if (input === 'r') {
-        for (i = 0; i < todoList.length; i++) {
-            console.log(todoList[i]);
+//     } else if (input === 'r') {
+//         for (i = 0; i < todoList.length; i++) {
+//             console.log(todoList[i]);
 
-        }
+//         }
 
-    } else if (input === "u") {
-        let Numberupdate = Number(prompt("ban muon update phan tu thu may"));
-        let valueupdate = prompt(" noi dung update");
-        todoList[Numberupdate - 1] = valueupdate;
-        for (i = 0; i < todoList.length; i++) {
-            console.log(todoList[i]);
+//     } else if (input === "u") {
+//         let Numberupdate = Number(prompt("ban muon update phan tu thu may"));
+//         let valueupdate = prompt(" noi dung update");
+//         todoList[Numberupdate - 1] = valueupdate;
+//         for (i = 0; i < todoList.length; i++) {
+//             console.log(todoList[i]);
 
-        }
+//         }
 
-    } else if (input === "d") {
-        let Numberdelete = Number(prompt("ban muon delete phan tu thu may"));
-        todoList.splice(Numberdelete - 1, 1);
-        for (i = 0; i < todoList.length; i++) {
-            console.log(todoList[i]);
+//     } else if (input === "d") {
+//         let Numberdelete = Number(prompt("ban muon delete phan tu thu may"));
+//         todoList.splice(Numberdelete - 1, 1);
+//         for (i = 0; i < todoList.length; i++) {
+//             console.log(todoList[i]);
 
-        }
-    } else if (input === "e") {
-        loop = false;
-    } else {
-        console.log('invalid command');
+//         }
+//     } else if (input === "e") {
+//         loop = false;
+//     } else {
+//         console.log('invalid command');
 
-    }
+//     }
 
-}
+// }
 
 
 
