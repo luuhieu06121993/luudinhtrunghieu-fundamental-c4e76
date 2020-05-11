@@ -170,7 +170,7 @@ console.log(a);
 // let big = a[0][0];
 // let small = a[0][0];
 // for (i = 0; i < a.length; i++) {
-//     for (j = 0; j = a[i].length; j++) {
+//     for (j = 0; j < a[i].length; j++) {
 //         if (a[i][j] < small) {
 //             small = a[i][j];
 
@@ -188,7 +188,7 @@ console.log(a);
 // let am = 0;
 // let duong = 0;
 // for (i = 0; i < a.length; i++) {
-//     for (j = 0; j = a[i].length; j++) {
+//     for (j = 0; j < a[i].length; j++) {
 //         if (a[i][j] < 0) {
 //             am = a[i][j];
 
