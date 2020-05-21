@@ -230,6 +230,38 @@
 // };
 
 
+// câu 16:
+// const oldData = {
+//     firedRice: {
+//         Price: 30,
+//         vnName: 'Com rang dua bo',
+//     },
+//     noddle: {
+//         price: 20,
+//         vnName: 'My tom chanh'
+//     },
+//     pho: {
+//         price: 35,
+//         vnName: 'Pho bo tai chin'
+//     },
+// };
+
+// cách 1:
+// let {firedRice,pho}= oldData;
+// let newdata= {firedRice,pho};
+// console.log(newdata);
+
+// cách 2:
+// let newdata=oldData;
+// delete newdata.noddle;
+// console.log(newdata);
+
+
+
+
+
+
+
 
 
 
