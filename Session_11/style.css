@@ -1,0 +1,12 @@
+*{
+    margin: auto;
+    padding: 0;
+    border-radius: border-box;
+}
+.error{
+    display: none;
+    width:100%;
+    font-size: 15px;
+    background-color: chartreuse;
+    text-align: center;
+}
