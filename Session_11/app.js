@@ -45,7 +45,7 @@ function onSubmitEvent(event) {
     event.preventDefault();
     const content = mainform.todo.value;
     const li = document.createElement("li");
-    li.innerHTML = `${content} <button id="delete">delete</button>;`
+    li.innerHTML = `${content} <button id="delete">delete</button>`;
     ul.appendChild(li);
 };
 
