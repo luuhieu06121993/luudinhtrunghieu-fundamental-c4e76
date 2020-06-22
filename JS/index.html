@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Demo of CORS Anywhere</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <button class="btn btn-primary" onclick="showClothes()">Show Clothes</button>
+    <button class="btn btn-success" onclick="showFormAddCloth()">Add Clothes</button>
+    <button class="btn btn-info" data-toggle="modal" data-target="#cart" onclick="showCart()">View Cart</button>
+    <table class="table" id="clothes-list">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Brand</th>
+                <th>Image</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <div class="modal" id="cart">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">My Cart</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <table id="cart-items-list" class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Number</th>
+                                <th>Total Price</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+
+                    <p>Total price: <b id="total-price"></b> USD</p>
+                    <div class="form-group">
+                        <label for="guest-name">Name:</label>
+                        <input type="text" id="guest-name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="guest-phone-number">Phone number:</label>
+                        <input type="text" id="guest-phone-number" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="guest-address">Address:</label>
+                        <input type="text" id="guest-address" class="form-control">
+                    </div>
+                    <button class="btn btn-secondary" onclick="buyNow(event)">Order</button>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/fake_data.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

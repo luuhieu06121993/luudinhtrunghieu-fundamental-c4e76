@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<section class="forn-sign-up-container">
+<form class="form-sign-up">
+    <h1>dang ki</h1>
+   <div class="content-input">
+       <input type="text" name="fullname" placeholder="full-name">
+       <span></span>
+       <div class="alert-error" id="fulname-error"></div>
+   </div>
+   <div class="content-input">
+       <input type="text" name="email" placeholder="email">
+       <span></span>
+       <div class="alert-error" id="email-error"></div>
+   </div>
+   <div class="content-input">
+       <input type="password" name="password" placeholder="password">
+       <span></span>
+       <div class="alert-error" id="password-error"></div>
+   </div>
+   <div class="content-input">
+       <input type="password" name="confirmpassword" placeholder="confirm">
+       <span></span>
+       <div class="alert-error" id="confirmpassword-error"></div>
+       <div class='alert-success' id="sign-up-success"></div>
+   </div>
+   <button type="submit" id="btn-sign-up" class='logbtn'>Register</button>
+</form>
+</section>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyAPBw90jwHgmQSFsd5sLl5PikezNZWGe1c",
+    authDomain: "c4e-z76.firebaseapp.com",
+    databaseURL: "https://c4e-z76.firebaseio.com",
+    projectId: "c4e-z76",
+    storageBucket: "c4e-z76.appspot.com",
+    messagingSenderId: "618743456987",
+    appId: "1:618743456987:web:8d6ef5ec03825181b358fe",
+    measurementId: "G-4V8RDHTV59"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src="./index.js"></script>
+</body>
+</html>

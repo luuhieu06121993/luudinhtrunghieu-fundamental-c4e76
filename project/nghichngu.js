@@ -1,17 +1,20 @@
 // nut gio hang
 let itemgiohang = document.getElementById("itemgiohang");
 let giohang = document.getElementById("giohang");
+let tab_menu=document.getElementsByClassName("tab-menu")[0];
+let main_menu=document.getElementsByClassName("main-menu")[0];
 itemgiohang.addEventListener("click", function () {
     if (giohang.style.display == "none") {
         giohang.style.display = "block";
     } else {
         giohang.style.display = "none";
+
     }
 });
-let x = document.getElementById("x")
-x.addEventListener('click', function () {
-    giohang.style.display = "none";
-});
+// let x = document.getElementById("x")
+// x.addEventListener('click', function () {
+//     giohang.style.display = "none";
+// });
 
 // cap nhat gia
 function updatebuy() {
@@ -22,10 +25,10 @@ function updatebuy() {
         fick_buy = fick_buys[i];
         let price_item = parseFloat(fick_buy.getElementsByClassName("gia-buy")[0].innerText);
         let soluong = fick_buy.getElementsByClassName("soluong-buy")[0].value;
-        fick_buy.getElementsByClassName("tong-buy")[0].innerText = (price_item * soluong) + "VND"
+        fick_buy.getElementsByClassName("tong-buy")[0].innerText = (price_item * soluong) + " VND"
         loop = loop + (price_item * soluong);
     };
-    document.getElementsByClassName('thanh tien')[0].innerText = loop + "VND";
+    document.getElementsByClassName('thanhtien')[0].innerText = loop + " VND";
 }
 
 // them vao gio
@@ -36,7 +39,7 @@ for (let i = 0; i < add_mua.length; i++) {
         let button = event.target;
         let product = button.parentElement.parentElement;
         let title = product.getElementsByClassName("name")[0].innerText;
-        let price = product.getElementsByClassName("gia")[0].innerText;
+        let price = parseFloat(product.getElementsByClassName("gia")[0].innerText);
         additemtobuy(title, price);
         updatebuy();
     });
@@ -54,9 +57,11 @@ function additemtobuy(title, price) {
     };
     let itembuycontent = `
     <div class="name-buy">${title}</div>
-    <div class="gia-buy">${price}</div>
+    <div class="gia-buy">${price} </div>
     <input class="soluong-buy" type="number" value="1">
-    <div class="tong-buy">${parseFloat(price)}</div>
+    but
+    <div class="sl">1</div>
+    <div class="tong-buy"> ${parseFloat(price)}</div>
     <button class="xoa" type="button">Xóa</button>
     `
     itembuy.innerHTML = itembuycontent;
